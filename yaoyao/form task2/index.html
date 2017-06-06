@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task2</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript" src="js.js"></script>
+</head>
+<body>
+	<form class="user">
+		<div class="formitem">
+			<label for="user_id">姓名</label>
+			<input type="text" name="user_id" id="user_id" onfocus="displayPrompt(this)" onblur="test_id()"><br />
+			<span class="prompt" id="prompt1">必填，长度为4~16个字符</span>
+		</div>
+		<div class="formitem">
+			<label for="user_pw">密码</label>
+			<input type="password" name="user_pw" id="user_pw" onfocus="displayPrompt(this)" onblur="test_pw()"><br />
+			<span class="prompt" id="prompt2">必填，长度为4~16个字母或数字</span>
+		</div>
+		<div class="formitem">
+			<label for="user_cpw">密码确认</label>
+			<input type="password" name="user_cpw" id="user_cpw" onfocus="displayPrompt(this)" onblur="rtest_pw()"><br />
+			<span class="prompt" id="prompt3">必填，再次输入相同密码</span>
+		</div>
+		<div class="formitem">
+			<label for="user_em">邮箱</label>
+			<input type="text" name="user_em" id="user_em" onfocus="displayPrompt(this)" onblur="test_email()"><br />
+			<span class="prompt" id="prompt4">必填，格式示例xxx@xxx.xxx</span>
+		</div>
+		<div class="formitem">
+			<label for="user_pn">手机</label>
+			<input type="text" name="user_pn" id="user_pn" onfocus="displayPrompt(this)" onblur="test_pn()"><br />
+			<span class="prompt" id="prompt5">必填，长度为4~16个字符</span>
+		</div>
+		<input type="button" value="提交" onclick="test_all()">
+	</form>
+</body>
+</html>
