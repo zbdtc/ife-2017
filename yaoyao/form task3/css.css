@@ -1,0 +1,58 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.user{
+	width: 600px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.formitem{
+	width: 600px;
+	/*height: 60px;*/
+	float: left;
+	margin-bottom: 15px;
+}
+
+#user_id, #user_pw, #user_cpw, #user_em, #user_pn{
+	float: left;
+	margin-left: 20px;
+	height: 30px;
+	width: 300px;
+	border-radius: 5px;
+	border: 1px solid #02DEf9;
+	outline: none;
+	font-size: 20px;
+}
+
+.user label{
+	float: left;
+	width: 66px;
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+}
+
+.user input[type=button]{
+	float: left;
+	margin-left: 175px;
+	height: 30px;
+	width: 100px;
+	background-color: #02DEf9;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	outline: none;
+	color: #fff;
+}
+
+.prompt{
+	display: none;
+	float: left;
+	margin-top: 10px;
+	margin-left: -300px;
+	font-size: 16px;
+	color: #aea7a7;
+}
